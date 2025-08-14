@@ -1,0 +1,73 @@
+html, body{
+    height: 100%;
+    margin: 0%;
+}
+
+body{
+    font-family: 'Special Elite, ',Noto Nastaliq Urdu;
+    background-color: #fffdf5;
+    color: #3f3f5a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+blockquote{
+    font-size: 2rem;
+    max-width: 600px;
+    line-height: 1.4;
+    position: relative;
+    margin: 0px;
+    padding: .5rem;
+}
+
+blockquote:before,
+blockquote:after{
+    position: absolute;
+    color: #f1efe6;
+    font-size: 8rem;
+    width: 4rem;
+    height: 4rem;
+
+}
+
+blockquote:before{
+    position:absolute;
+    content:  '“';
+    left: -5rem;
+    top: -2rem;
+}
+
+blockquote::after{
+    position:absolute;
+    content: '”';
+    right: -5rem;
+    bottom: -1rem;
+}
+
+cite{
+    line-height: 3;
+    text-align: left;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 600px) {
+    blockquote {
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+
+    blockquote::before,
+    blockquote::after {
+        font-size: 4.5rem;
+        left: -1.5rem;
+        right: -1.5rem;
+    }
+
+    cite {
+        font-size: 1rem;
+    }
+}
